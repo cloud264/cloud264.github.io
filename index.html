@@ -2,18 +2,30 @@
 
 <head>
     <title>Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
         .game-canvas {
             border: 1px solid lightgrey;
             border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
         }
     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
-    <canvas id="game-canvas" class="game-canvas" width="600" height="600">
-        <script src="./build/app.js" type="module"></script>
+    <div class="game-wrapper">
+        <canvas id="game-canvas" class="game-canvas" width="1080px" height="1920px">
+    </div>
+    <script src="./build/app.js" type="module"></script>
 </body>
 
 </html>
