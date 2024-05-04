@@ -1,0 +1,10 @@
+.app-container {
+    display: flex;
+    gap: 16px;
+}
+
+.app-item {
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 8px;
+}

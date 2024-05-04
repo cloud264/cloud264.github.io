@@ -1,46 +1,17 @@
-<html>
-
+<htm lang="en">
 <head>
-    <title>Game</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .game-wrapper {
-            display: inline-block;
-            overflow: hidden;
-            border: 1px solid lightgrey;
-            border-radius: 8px;
-        }
-
-        .game-canvas {
-            max-width: 480px;
-            height: auto;
-        }
-
-        @media (max-width: 500px) {
-            .game-canvas {
-                width: auto;
-                height: auto;
-                max-width: 100%;
-            }
-        }
-    </style>
+    <title>Apps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="./build/app.js" type="module"></script>
+    <link rel="stylesheet" href="./css/index.css"/>
 </head>
-
 <body>
-    <div class="game-wrapper">
-        <canvas id="game-canvas" class="game-canvas" width="720" height="1280">
+    <div class="app-container">
+        <div class="app-item">
+            <a href="./apps/birb/">Flappy Birb</a>
+        </div>
+        <div class="app-item">
+            <a href="./apps/dijkstra/">Dijkstra Demo</a>
+        </div>
     </div>
 </body>
-
 </html>
