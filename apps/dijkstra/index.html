@@ -1,9 +1,60 @@
-<html lang="en">
-    <head>
-        <title>Dijkstra Demo</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    <body>
-        TODO
-    </body>
+<html>
+
+<head>
+    <title>Game</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .game-canvas {
+            max-width: 800px;
+            height: auto;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 8px;
+            gap: 8px;
+        }
+
+        .options-wrapper {
+            display: flex;
+            gap: 8px;
+        }
+
+        @media (max-width: 800px) {
+            .game-canvas {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./build/app.js" type="module"></script>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="options-wrapper">
+            <select name="algorithms" id="algorithms">
+                <option value="dijkstra">A*</option>
+                <option value="dijkstra">Dijkstra</option>
+            </select>
+            <button>Apply</button>
+        </div>
+        <div class="game-wrapper">
+            <canvas id="dijkstra-canvas" class="game-canvas" width="1000" height="1000">
+        </div>
+    </div>
+</body>
+
 </html>
